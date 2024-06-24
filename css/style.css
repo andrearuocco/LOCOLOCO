@@ -6,7 +6,7 @@
     border-radius: 50%;
 }
 
-h6 {
+#h6 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -31,3 +31,53 @@ h6 {
 .card:hover a.position-absolute {
     display: block !important;
 }
+
+.h-300 {
+    height: 300px;
+}
+
+.cinqpx {
+    height: 50px;
+}
+
+.px50 {
+    width: 50px;
+}
+
+.description {
+    bottom: 2rem;
+}
+
+#five ul:hover .fa-solid, #five ul:hover .fa-regular {
+    display: block !important;
+}
+
+#five ul:hover {
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+
+.centpx {
+    height: 130px;
+}
+
+.px100 {
+    width: 130px;
+}
+
+.br-20 {
+    border-radius: 20px;
+}
+
+.pi-px {
+    height: 30px;
+}
+
+.px-pi {
+    width: 30px;
+}
+
+.bg-cb {
+    background-color: cadetblue;
+}
+
