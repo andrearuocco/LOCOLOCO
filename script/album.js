@@ -43,6 +43,48 @@ getDataAl().then(data => {
     }
 })
 
+/*
+function searchIcon() {
+    
+    let input = "https://striveschool-api.herokuapp.com/api/deezer/search?q="
+    const FORM = document.querySelector(".form-control").value.toLowerCase()
+    input += FORM
+    fetch(input).then(response => {
+        response.json().then(data => {
+            console.log(data)
+        })
+    })
+
+
+    let input = "https://striveschool-api.herokuapp.com/api/deezer/search?q="
+    const FORM = document.querySelector(".form-control").value.toLowerCase()
+    input += FORM
+    fetch(input).then(response => {
+        response.json().then(data => {
+            console.log(data)
+            /* 
+            const ARTIST = document.getElementById("artist")
+            const ALBUM = document.getElementById("album")
+            ARTIST.innerHTML = "<h1 class='col-12 text-white pt-3'>Popular Albums</h1>"
+            ALBUM.classList.add("d-none")
+            data.data.slice(0, 6).forEach((element) => {
+                //console.log(element.artist)
+                ARTIST.innerHTML += `
+            <div class="card bg-transparent col-12 col-sm-6 col-md-3 col-lg-2 position-relative">
+              <img src="${element.album.cover_medium}" class="card-img-top br-50">
+              <div class="card-body">
+                <small><h6 id="h6" class="text-white card-title">${element.title}</h6></small>
+                <p class="card-text text-white text-opacity-50">${element.artist.name}</p>
+              </div>
+              <a href="artist.html?id=${element.artist.id}" class="btn btn-success position-absolute br-pa d-none"><i class='fa-solid fa-play p-2'></i></a> 
+            </div>`
+            })
+            
+        })
+    })
+} 
+*/
+
 document.addEventListener('scroll', function() {
     const TOP = document.querySelector(".top-bar ul:first-child")
     let scrollPosition = window.scrollY

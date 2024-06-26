@@ -160,6 +160,18 @@ footer li a.text-white-50:hover {
     margin-bottom: 0;
 }
 
-#album {
+#albums {
     border-bottom: 1px solid white;
+}
+
+.mt {
+    margin-top: 8rem;
+}
+
+.fa-house, .fa-spotify, .fa-magnifying-glass {
+    font-size: 1.8rem;
+}
+
+.fa-magnifying-glass {
+    cursor: pointer;
 }

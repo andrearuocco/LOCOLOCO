@@ -2,6 +2,24 @@ const params = new URLSearchParams(location.search)
 console.log(params)
 let id = params.get("id")
 
+function searchIcon() {
+    let input = "https://striveschool-api.herokuapp.com/api/deezer/search?q="
+    const FORM = document.querySelector(".form-control").value.toLowerCase()
+    input += FORM
+    if (FORM !== "") {
+        fetch(input).then(response => {
+            response.json().then(data => {
+                //console.log(data.data)
+                for (index of data.data.slice(0, 1)) {
+                    console.log(index)
+                    /* id = index.artist.id
+                    console.log(id) */
+                }
+            })
+        })
+    }
+} 
+
 let artist_endpoint = "https://striveschool-api.herokuapp.com/api/deezer/artist/" + id;
 
 const getDataAr = async () => {
