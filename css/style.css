@@ -90,3 +90,23 @@
         display: block !important;
     }
 }
+
+@media (max-width: 610px) {
+    .top-bar ul:last-child {
+        display: none !important;
+    }
+}
+
+@media (max-width: 440px) {
+    #top-bar {
+        display: none !important;
+    }
+}
+
+#top-bar {
+    font-size: 1.4rem;
+}
+
+li.mx-auto {
+    font-size: 1.2rem;
+}

@@ -16,8 +16,9 @@ const newFetch = async (url) => {
     return data;
 };
 
+let dataName = ""
 getDataAr().then(data => {
-    //console.log(data)
+    dataName = data.name
     let imageAr = data.picture_big
     const IMG = document.querySelector(".jumbotron img")
     IMG.src = data.picture_big
@@ -70,4 +71,14 @@ getDataAr().then(data => {
             </div>`
         });
     })
+})
+
+document.addEventListener('scroll', function() {
+    const TOP = document.querySelector(".top-bar ul:first-child")
+    let scrollPosition = window.scrollY
+    let height = 340
+    if (scrollPosition >= height) {
+        TOP.innerHTML = `<li class="bg-success br-50 me-3"><i id="top-bar" class="fa-solid fa-play p-3"></i></li>
+        <li class="text-white"><h1>${dataName}</h1></li>`
+    }
 })
