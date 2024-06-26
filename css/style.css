@@ -130,3 +130,19 @@ footer li a.text-white-50:hover {
 .fa-square-instagram, .fa-twitter, .fa-facebook {
     font-size: 1.6rem;
 }
+
+.w-200 {
+    width: 200px;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.text {
+    font-size: 1.3rem;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
