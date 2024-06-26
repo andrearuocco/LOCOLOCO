@@ -58,11 +58,11 @@
 }
 
 .centpx {
-    height: 130px;
+    height: 120px;
 }
 
 .px100 {
-    width: 130px;
+    width: 120px;
 }
 
 .br-20 {
@@ -81,3 +81,12 @@
     background-color: cadetblue;
 }
 
+@media (min-width: 1200px) {
+    #five {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+    #none {
+        display: block !important;
+    }
+}
