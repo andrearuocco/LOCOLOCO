@@ -23,7 +23,20 @@ getDataAl().then(data => {
     HEAD.innerText = `${data.artist.name}`
     HEA.innerText = `${data.nb_tracks}` + " tracks"
 
+    const ALBUM = document.querySelector(".album")
     for(index of data.tracks.data) {
         console.log(index)
+        ALBUM.innerHTML += `
+        <div id='tracks' class='d-flex justify-content-between me-4 mb-2'>
+            <ul class='d-flex list-unstyled align-items-center text-white'>
+                <li class='p-2'><i class='fa-solid fa-play d-none'></i></li>
+                <li class='d-flex flex-column'><h6>${index.title}</h6><p>${index.artist.name}</p></li>
+            </ul>
+            <ul class='d-flex list-unstyled align-items-center text-white'>
+                <li class='pe-4'><i class='fa-regular fa-heart d-none p-2'></i></li>
+                <li class=''>${index.duration}</li>
+                <li class=''><i class='fa-solid fa-ellipsis p-2 d-none'></i></li>
+            </ul> 
+        </div>`
     }
 })

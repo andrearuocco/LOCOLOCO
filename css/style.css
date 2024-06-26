@@ -146,3 +146,20 @@ footer li a.text-white-50:hover {
 .pt-50 {
     padding-top: 50px;
 }
+
+#tracks:hover .fa-ellipsis, #tracks:hover .fa-heart, #tracks:hover .fa-play  {
+    display: block !important;
+}
+
+#tracks:hover {
+    background-color: cadetblue;
+    border-radius: 20px;
+}
+
+#tracks li.d-flex p {
+    margin-bottom: 0;
+}
+
+#album {
+    border-bottom: 1px solid white;
+}
