@@ -110,3 +110,23 @@
 li.mx-auto {
     font-size: 1.2rem;
 }
+
+footer li a.text-white-50 {
+    text-decoration: none;
+}
+
+footer li a.text-white-50:hover {
+    text-decoration: underline;
+}
+
+#li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.fa-square-instagram, .fa-twitter, .fa-facebook {
+    font-size: 1.6rem;
+}

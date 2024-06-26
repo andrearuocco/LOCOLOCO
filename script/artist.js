@@ -79,6 +79,6 @@ document.addEventListener('scroll', function() {
     let height = 340
     if (scrollPosition >= height) {
         TOP.innerHTML = `<li class="bg-success br-50 me-3"><i id="top-bar" class="fa-solid fa-play p-3"></i></li>
-        <li class="text-white"><h1>${dataName}</h1></li>`
+        <li class="text-white"><h1 id="li">${dataName}</h1></li>`
     }
 })
