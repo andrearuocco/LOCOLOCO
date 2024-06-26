@@ -10,8 +10,10 @@ const getDataAl = async () => {
     return data;
 };
 
+let dataName = ""
 getDataAl().then(data => {
     //console.log(data.tracks.data)
+    dataName = data.artist.name
     const IMGO = document.querySelector(".fuerte img")
     const IMGT = document.querySelector(".fuerte li img")
     const HEADI = document.getElementById("albumTitle")
@@ -38,5 +40,15 @@ getDataAl().then(data => {
                 <li class=''><i class='fa-solid fa-ellipsis p-2 d-none'></i></li>
             </ul> 
         </div>`
+    }
+})
+
+document.addEventListener('scroll', function() {
+    const TOP = document.querySelector(".top-bar ul:first-child")
+    let scrollPosition = window.scrollY
+    let height = 340
+    if (scrollPosition >= height) {
+        TOP.innerHTML = `<li class="bg-success br-50 me-3"><i id="top-bar" class="fa-solid fa-play p-3"></i></li>
+        <li class="text-white"><h1 id="li">${dataName}</h1></li>`
     }
 })
