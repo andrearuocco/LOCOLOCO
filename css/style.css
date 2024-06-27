@@ -91,6 +91,13 @@
     }
 }
 
+@media (max-width: 1215px) {
+    #ventura {
+        display: none !important;
+    }
+}
+
+
 @media (max-width: 610px) {
     .top-bar ul:last-child {
         display: none !important;
@@ -174,4 +181,36 @@ footer li a.text-white-50:hover {
 
 .fa-magnifying-glass {
     cursor: pointer;
+}
+
+.h-80 {
+    height: 50px;
+}
+
+.bord {
+    border-radius: 20px;
+    border: 3px solid cadetblue;
+}
+
+#cuore:hover {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.px80 {
+    width: 80px;
+}
+
+.cent {
+    height: 100px;
+}
+
+.tnec {
+    width: 200px;
+}
+
+@media (max-width: 830px) {
+    .tnec {
+        width: 100px;
+    }
 }

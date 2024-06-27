@@ -10,7 +10,7 @@
 </head>
 <body class="container-fluid">
     <main class="row d-flex flex-row-reverse">
-        <div class="fuerte col-9 bg-black"> 
+        <div class="fuerte col-12 col-sm-9 bg-black"> 
             <div class="top-bar d-flex justify-content-between sticky-top bg-dark mt-1 br-20 bg-gradient">
                 <ul class="list-unstyled d-flex py-2 ms-2">
                     <li class="pe-2"><i class="fa-solid fa-arrow-left text-white"></i></li>
@@ -74,31 +74,32 @@
                 <div class="w-100 cinqpx text-white-50">© 2024 Spotify AB</div>
             </footer>
         </div>
-        <aside class="sidebar col-3 bg-dark bg-gradient vh-100 position-fixed fixed-top">
-            <ul class="list-unstyled br-20 bg-black bg-gradient p-3 text-white mt-3">
-                <li class="m-3 d-flex align-items-center">
-                    <i class="fa-brands fa-spotify"></i> <h6 class="ps-2">Spotify</h6>
-                </li>
-                <li class="m-3 d-flex align-items-center">
-                    <i class="fa-solid fa-house"></i> <h6 class="ps-2">Home</h6>
-                </li>
-                <li class="m-3 d-flex align-items-center">
-                    <i class="fa-solid fa-magnifying-glass" onclick=""></i> <input type="text" class="ms-2 form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                </li>
-            </ul>
+        <aside class="d-none d-sm-block sidebar col-3 bg-dark bg-gradient vh-100 position-fixed fixed-top">
+            <h4 class="p-3 mt-3 text-white br-20 bg-black bg-gradient"><img class="cinqpx px80 me-2" src="./css/Spotify-logo.png" alt="SpotifyLogo">Crea la tua playlist Spotify <i class="fa-solid fa-plus"></i></h4>
+
             <ul class="row list-unstyled d-flex p-3 br-20 bg-black bg-gradient mx-1">
-                <li class="col-4 mb-2 text-white-50"><small>Legal</small></li>
-                <li class="col-8 mb-2 text-white-50"><small>Safety & Privacy Center</small></li>
-                <li class="col-4 mb-2 text-white-50"><small>Privacy Policy</small></li>
-                <li class="col-8 mb-2 text-white-50"><small>Cookie Settings</small></li>
-                <li class="col-4 mb-2 text-white-50"><small>About Ads</small></li>
-                <li class="col-8 mb-2 text-white-50"><small>Accessibility</small></li>
-                <li class="col-4 mb-2 text-white-50"><small>Cookies</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>Legal</small></li>
+                <li class="col-12 col-lg-8 mb-2 text-white-50"><small>Safety & Privacy Center</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>Privacy Policy</small></li>
+                <li class="col-12 col-lg-8 mb-2 text-white-50"><small>Cookie Settings</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>About Ads</small></li>
+                <li id="ventura" class="col-12 col-lg-8 mb-2 text-white-50"><small>Accessibility</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>Cookies</small></li>
             </ul>
         </aside>
+        <div class="fixed-bottom h-80 bg-dark bg-gradient bord mx-auto my-auto d-flex justify-content-center">
+            <ul class="list-unstyled text-white d-flex align-items-center">
+                <li><i class="fa-solid fa-reply p-3"></i></li>
+                <li><i class="fa-solid fa-arrow-left p-3"></i></li>
+                <li id="none"><i class="fa-solid fa-play p-3"></i><audio id="audio" class="d-none m-3" controls><source src="" type="audio/mpeg"></audio></li>
+                <li><i class="fa-solid fa-arrow-right p-3"></i></li>
+                <li><i class="fa-solid fa-share-nodes p-3"></i></li>
+            </ul>
+        </div>
     </main>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./script/album.js"></script>
 </body>
+
 </html>

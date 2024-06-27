@@ -10,7 +10,7 @@
 </head>
 <body class="container-fluid">
     <main class="row d-flex flex-row-reverse">
-        <div class="fuerte col-9 bg-black"> 
+        <div class="fuerte col-12 col-sm-9 bg-black"> 
             <div class="top-bar d-flex justify-content-between sticky-top bg-dark mt-1 br-20 bg-gradient">
                 <ul class="list-unstyled d-flex py-2 ms-2">
                     <li class="pe-2"><i class="fa-solid fa-arrow-left text-white"></i></li>
@@ -21,13 +21,13 @@
                     <li class="ms-2 p-3 bg-white text-black br-20">Accedi</li>
                 </ul>
             </div> 
-            <section class="row mt-3" id="artist">
+            <section class="row mt-3 mb-5 pb-5" id="artist">
                 <h1 class="col-12 text-white pt-3">Popular Artists</h1>
             </section>
-            <section class="row" id="album">
+            <section class="row mb-5 pb-5" id="album">
                 <h1 class="col-12 text-white pt-3">Popular Albums</h1>
             </section>
-            <footer class="row mt-4 mx-3 bg-black br-20 bg-opacity-75 bg-gradient">
+            <footer class="row mt-4 pt-5 mx-3 bg-black br-20 bg-opacity-75 bg-gradient">
                 <ul class="col-12 col-sm-6 col-md-3 col-lg-2 list-unstyled">
                     <li<a href="" class="text-white">Azienda</a></li>
                     <li class="mt-2"><a href="" class="text-white-50">Chi siamo</a></li>
@@ -64,7 +64,7 @@
                 <div class="w-100 cinqpx text-white-50">© 2024 Spotify AB</div>
             </footer>
         </div>
-        <aside class="sidebar col-3 bg-dark bg-gradient vh-100 position-fixed fixed-top">
+        <aside class="sidebar d-none d-sm-block col-3 bg-dark bg-gradient vh-100 position-fixed fixed-top">
             <ul class="list-unstyled br-20 bg-black bg-gradient p-3 text-white mt-3">
                 <li class="m-3 d-flex align-items-center">
                     <i class="fa-brands fa-spotify"></i> <h6 class="ps-2">Spotify</h6>
@@ -72,18 +72,18 @@
                 <li class="m-3 d-flex align-items-center">
                     <i class="fa-solid fa-house"></i> <h6 class="ps-2">Home</h6>
                 </li>
-                <li class="m-3 d-flex align-items-center">
-                    <i class="fa-solid fa-magnifying-glass" onclick="searchIcon()"></i> <input type="text" class="ms-2 form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <li class="m-3 d-lg-flex align-items-center">
+                    <i class="fa-solid fa-magnifying-glass ms-2 ms-lg-0" onclick="searchIcon()"></i> <input type="text" class="mt-2 mt-lg-0 ms-2 form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </li>
             </ul>
             <ul class="row list-unstyled d-flex p-3 br-20 bg-black bg-gradient mx-1">
-                <li class="col-4 mb-2 text-white-50"><small>Legal</small></li>
-                <li class="col-8 mb-2 text-white-50"><small>Safety & Privacy Center</small></li>
-                <li class="col-4 mb-2 text-white-50"><small>Privacy Policy</small></li>
-                <li class="col-8 mb-2 text-white-50"><small>Cookie Settings</small></li>
-                <li class="col-4 mb-2 text-white-50"><small>About Ads</small></li>
-                <li class="col-8 mb-2 text-white-50"><small>Accessibility</small></li>
-                <li class="col-4 mb-2 text-white-50"><small>Cookies</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>Legal</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>Safety & Privacy Center</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>Privacy Policy</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>Cookie Settings</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>About Ads</small></li>
+                <li id="ventura" class="col-12 col-lg-4 mb-2 text-white-50"><small>Accessibility</small></li>
+                <li class="col-12 col-lg-4 mb-2 text-white-50"><small>Cookies</small></li>
             </ul>
         </aside>
     </main>
